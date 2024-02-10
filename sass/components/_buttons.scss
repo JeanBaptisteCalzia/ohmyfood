@@ -1,0 +1,31 @@
+// -----------------------------------------------------------------------------
+// This file contains Buttons styles
+// -----------------------------------------------------------------------------
+.button {
+  background: $brand-primary;
+  background: linear-gradient(175deg, #e370da, #a55cdc);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  font-size: $font-size-ms;
+  font-weight: $font-weight-semibold;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  padding: rem(14) rem(20);
+  border-radius: 50px;
+  color: $color-white;
+  font-weight: $font-weight-semibold;
+
+  &:hover {
+    background: linear-gradient(
+      175deg,
+      lighten(#e370da, 5%) 0%,
+      lighten(#a55cdc, 5%) 100%
+    );
+  }
+
+  &:focus,
+  &:active,
+  &:active:focus {
+    outline: 0;
+  }
+}
