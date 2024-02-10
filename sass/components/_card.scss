@@ -1,0 +1,42 @@
+// -----------------------------------------------------------------------------
+// This file contains Card styles
+// -----------------------------------------------------------------------------
+.card {
+  position: relative;
+  background-color: $color-white;
+  border-radius: rem(15);
+  overflow: hidden;
+  margin-bottom: rem(20);
+
+  img {
+    object-fit: cover;
+    height: 174px;
+    width: 100%;
+  }
+
+  &__highlight {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: rem(8) rem(10);
+    background-color: $brand-tertiary;
+    color: #008766;
+    border-radius: rem(2);
+    font-weight: $font-weight-semibold;
+    margin: rem(12) rem(12);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: rem(16) rem(12);
+  }
+
+  &__text {
+    color: $color-black;
+    p {
+      margin: 0;
+    }
+  }
+}
