@@ -1,0 +1,49 @@
+// -----------------------------------------------------------------------------
+// This file contains Typography styles
+// -----------------------------------------------------------------------------
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  color: $color-black;
+  line-height: $line-height-global;
+  text-rendering: auto;
+  // The font-smooth CSS property controls the application of anti-aliasing when fonts are rendered.
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+span {
+  font-family: $primary-font;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-global;
+}
+
+h1 {
+  font-size: $font-size-lg;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-heading;
+}
+
+.hero {
+  &__sub-title {
+    font-size: $font-size-md;
+    font-weight: $font-weight-light;
+    line-height: $line-height-heading;
+  }
+}
+
+h2 {
+  font-size: $font-size-lg;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-heading;
+}
+
+h3 {
+  font-size: $font-size-md;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-heading;
+}
