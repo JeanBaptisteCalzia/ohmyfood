@@ -1,0 +1,41 @@
+// -----------------------------------------------------------------------------
+// This file contains Func styles
+// -----------------------------------------------------------------------------
+.func {
+  position: relative;
+  background-color: $color-light-gray;
+  border-radius: rem(20);
+  padding: rem(24);
+  margin-bottom: rem(24);
+  margin-left: rem(12);
+
+  i {
+    color: $color-medium-gray;
+    font-size: rem(24);
+    margin-right: rem(24);
+    margin-left: rem(12);
+    display: inline-block;
+  }
+
+  &__number {
+    position: absolute;
+    left: rem(-12);
+    top: calc(50% - 12px);
+    display: inline-block;
+    font-weight: $font-weight-semibold;
+    font-size: rem(14);
+    padding-top: rem(2);
+    text-align: center;
+    border-radius: rem(50);
+    background-color: $brand-primary;
+    color: $color-body;
+    width: rem(24);
+    height: rem(24);
+  }
+
+  &__title {
+    display: inline-block;
+    font-weight: $font-weight-semibold;
+    margin: 0;
+  }
+}
