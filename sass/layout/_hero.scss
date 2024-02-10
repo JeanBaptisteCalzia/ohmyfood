@@ -1,0 +1,16 @@
+// -----------------------------------------------------------------------------
+// This file contains Hero styles
+// -----------------------------------------------------------------------------
+.hero {
+  text-align: center;
+
+  .wrapper {
+    padding: rem(40) 0 rem(60) 0;
+  }
+
+  br {
+    @include responsive(medium-screens) {
+      display: none;
+    }
+  }
+}
