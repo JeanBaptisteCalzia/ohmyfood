@@ -1,0 +1,22 @@
+// -----------------------------------------------------------------------------
+// This file contains Header styles
+// -----------------------------------------------------------------------------
+nav {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: rem(16) rem(0);
+
+  a {
+    height: rem(32);
+    width: rem(32);
+    text-align: center;
+    line-height: rem(32);
+
+    .fa-solid {
+      font-size: rem(24);
+      line-height: rem(32);
+    }
+  }
+}
