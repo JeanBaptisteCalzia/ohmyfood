@@ -3,3 +3,30 @@ $width-medium: 640px;
 $width-large: 1024px;
 $width-xlarge: 1200px;
 $width-xxlarge: 1440px;
+
+// Font family
+// ------------------------
+$primary-font: "Roboto", sans-serif;
+$secondary-font: "Shrikhand", serif;
+
+// Font size
+// ------------------------
+$font-size-sm: rem(14); // Small
+$font-size-ms: rem(16); // Default
+$font-size-md: rem(18); // Medium
+$font-size-lg: rem(24); // Large
+$font-size-xl: rem(28); // Extra large
+
+// Font weight
+// ------------------------
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-semibold: 500;
+$font-weight-bold: 700;
+
+// Line height
+// ------------------------
+$line-height-global: 1.5;
+$line-height-heading: 1;
+$line-height-text: 1.5;
+$line-height-btn-default: 1;
