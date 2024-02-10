@@ -1,0 +1,55 @@
+// -----------------------------------------------------------------------------
+// This file contains Footer styles
+// -----------------------------------------------------------------------------
+footer {
+  .wrapper {
+    padding-top: rem(24);
+    padding-bottom: rem(24);
+    display: flex;
+    flex-direction: column;
+
+    @include responsive(medium-screens) {
+      flex-direction: row;
+      justify-content: flex-end;
+      padding-top: rem(64);
+      padding-bottom: rem(30);
+    }
+  }
+
+  img {
+    filter: invert(1);
+    margin-bottom: rem(16);
+    @include responsive(medium-screens) {
+      order: 2;
+      margin-left: rem(120);
+      margin-bottom: 0;
+      width: rem(120);
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: $color-body;
+    @include responsive(medium-screens) {
+      order: 1;
+      display: flex;
+      align-items: center;
+    }
+
+    li {
+      font-weight: $font-weight-semibold;
+      padding-bottom: rem(8);
+      @include responsive(medium-screens) {
+        display: inline-block;
+        margin-left: rem(32);
+        padding-bottom: 0;
+      }
+
+      i {
+        margin-right: rem(12);
+      }
+    }
+  }
+}
