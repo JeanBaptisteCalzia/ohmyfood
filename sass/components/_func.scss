@@ -9,6 +9,15 @@
   margin-bottom: rem(24);
   margin-left: rem(12);
 
+  @include responsive(medium-screens) {
+    width: 100%;
+    text-align: center;
+  }
+
+  @include responsive(wide-screens) {
+    text-align: left;
+  }
+
   i {
     color: $color-medium-gray;
     font-size: rem(24);

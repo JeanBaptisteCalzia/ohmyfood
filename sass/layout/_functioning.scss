@@ -5,5 +5,15 @@
   .wrapper {
     padding-top: rem(48);
     padding-bottom: rem(68);
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      @include responsive(medium-screens) {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 24px;
+      }
+    }
   }
 }
