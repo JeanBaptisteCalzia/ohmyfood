@@ -9,6 +9,10 @@
   margin-bottom: rem(24);
   margin-left: rem(12);
 
+  &:hover i {
+    color: $brand-primary;
+  }
+
   @include responsive(medium-screens) {
     width: 100%;
     text-align: center;
