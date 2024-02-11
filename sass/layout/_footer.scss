@@ -8,7 +8,7 @@ footer {
     display: flex;
     flex-direction: column;
 
-    @include responsive(medium-screens) {
+    @include responsive(wide-screens) {
       flex-direction: row;
       justify-content: flex-end;
       padding-top: rem(64);
@@ -19,11 +19,12 @@ footer {
   img {
     filter: invert(1);
     margin-bottom: rem(16);
-    @include responsive(medium-screens) {
+    width: rem(120);
+
+    @include responsive(wide-screens) {
       order: 2;
       margin-left: rem(120);
       margin-bottom: 0;
-      width: rem(120);
     }
   }
 
@@ -32,16 +33,20 @@ footer {
     margin: 0;
     padding: 0;
     color: $color-body;
-    @include responsive(medium-screens) {
+    display: flex;
+    flex-direction: column;
+
+    @include responsive(wide-screens) {
       order: 1;
-      display: flex;
+      flex-direction: row;
       align-items: center;
     }
 
     li {
       font-weight: $font-weight-semibold;
       padding-bottom: rem(8);
-      @include responsive(medium-screens) {
+
+      @include responsive(wide-screens) {
         display: inline-block;
         margin-left: rem(32);
         padding-bottom: 0;
