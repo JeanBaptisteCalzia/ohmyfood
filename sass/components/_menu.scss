@@ -3,6 +3,7 @@
 // -----------------------------------------------------------------------------
 .menu {
   display: flex;
+  overflow: hidden;
   flex-direction: row;
   justify-content: space-between;
   background-color: $color-white;
@@ -14,11 +15,8 @@
   }
 
   &:hover .menu__btn {
-    display: block;
-  }
-
-  &:hover .menu__content {
-    width: calc(100% - 60px);
+    opacity: 1;
+    margin-right: 0;
   }
 
   &__content {
@@ -52,11 +50,13 @@
   }
 
   &__btn {
-    display: none;
     width: rem(60);
     background-color: $brand-tertiary;
     border-radius: 0 rem(15) rem(15) 0;
     position: relative;
+    opacity: 0;
+    margin-right: rem(-60);
+    transition: all 400ms ease-in-out;
 
     i {
       color: $color-white;
