@@ -30,3 +30,13 @@ header {
     }
   }
 }
+
+.restaurant-page header {
+  nav {
+    justify-content: space-between;
+
+    img {
+      margin-right: calc(50% - 98px); /* 196px / 2 : Logo size*/
+    }
+  }
+}
