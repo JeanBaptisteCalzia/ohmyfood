@@ -1,0 +1,70 @@
+// -----------------------------------------------------------------------------
+// This file contains Menu components styles
+// -----------------------------------------------------------------------------
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: $color-white;
+  border-radius: rem(15);
+  margin-bottom: rem(12);
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:hover .menu__btn {
+    display: block;
+  }
+
+  &:hover .menu__content {
+    width: calc(100% - 60px);
+  }
+
+  &__content {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: rem(12) rem(16);
+  }
+
+  &__text {
+    overflow: hidden;
+
+    h3 {
+      margin-bottom: rem(4);
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    p {
+      margin: 0;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+
+  &__price span {
+    font-weight: $font-weight-bold;
+  }
+
+  &__btn {
+    display: none;
+    width: rem(60);
+    background-color: $brand-tertiary;
+    border-radius: 0 rem(15) rem(15) 0;
+    position: relative;
+
+    i {
+      color: $color-white;
+      font-size: rem(20);
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      transform: translate(50%, -50%);
+    }
+  }
+}
