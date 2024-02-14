@@ -1,0 +1,22 @@
+// -----------------------------------------------------------------------------
+// This file contains Restaurant page styles
+// -----------------------------------------------------------------------------
+h1 {
+  font-family: $secondary-font;
+  font-size: $font-size-xl;
+  font-weight: $font-weight-regular;
+}
+
+h2 {
+  font-weight: $font-weight-light;
+  font-size: $font-size-ms;
+  text-transform: uppercase;
+
+  &::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid $brand-tertiary;
+    width: rem(40);
+    margin-top: rem(4);
+  }
+}
