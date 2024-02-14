@@ -17,6 +17,27 @@
   animation-fill-mode: forwards; /* This declaration stops the animation from looping */
 }
 
+.loader-container {
+  animation: change-bg-color 3s;
+  animation-fill-mode: forwards; /* This declaration stops the animation from looping */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@keyframes change-bg-color {
+  0% {
+    background-color: white;
+    z-index: 100000;
+  }
+  100% {
+    background-color: transparent;
+    display: none;
+  }
+}
+
 @keyframes turn {
   100% {
     transform: rotate(1turn);
