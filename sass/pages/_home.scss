@@ -1,3 +1,20 @@
 // -----------------------------------------------------------------------------
 // This file contains Home page styles
 // -----------------------------------------------------------------------------
+.home-page {
+  input {
+    border: 0;
+    background-color: $color-gray;
+    line-height: $line-height-global;
+    font-size: $font-size-ms;
+    padding: rem(16) rem(16);
+  }
+
+  input::placeholder {
+    color: $color-black;
+    font-family: $primary-font;
+    font-weight: $font-weight-regular;
+    line-height: $line-height-global;
+    font-size: $font-size-ms;
+  }
+}
