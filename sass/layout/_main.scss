@@ -20,7 +20,7 @@ main {
         gap: rem(50) rem(100);
       }
 
-      > a {
+      > article {
         @include responsive(medium-screens) {
           width: calc(50% - 12px);
         }
