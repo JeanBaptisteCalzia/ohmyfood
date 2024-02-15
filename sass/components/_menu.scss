@@ -44,17 +44,14 @@
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    padding: rem(12);
-    width: 10%;
+    padding-bottom: rem(12);
+    // padding-right: rem(12);
+    flex-basis: 10%;
     font-weight: $font-weight-bold;
   }
 
   &__icon {
     flex-basis: 0%;
-    position: absolute;
-    right: 0;
-    width: rem(60);
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -74,11 +71,11 @@
 
   input[type="checkbox"]:checked ~ .menu__price {
     flex-basis: 10%;
+    padding-right: rem(12);
   }
 
   input[type="checkbox"]:checked ~ .menu__icon {
     flex-basis: 10%;
-    margin: 0;
     transform: translateX(0%);
   }
 }
