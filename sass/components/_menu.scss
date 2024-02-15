@@ -14,15 +14,6 @@
     cursor: pointer;
   }
 
-  &:hover .menu__btn {
-    opacity: 1;
-    margin-right: 0;
-  }
-
-  &:hover .menu__content {
-    max-width: calc(100% - 60px);
-  }
-
   &__content {
     display: flex;
     width: 100%;
@@ -72,5 +63,10 @@
       right: 50%;
       transform: translate(50%, -50%);
     }
+  }
+
+  input[type="checkbox"]:checked + .menu__btn {
+    margin-right: 0;
+    opacity: 1;
   }
 }

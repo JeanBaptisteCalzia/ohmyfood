@@ -1,0 +1,29 @@
+// -----------------------------------------------------------------------------
+// This file contains Form styles
+// -----------------------------------------------------------------------------
+form {
+  input[type="checkbox"] {
+    appearance: none;
+  }
+
+  fieldset {
+    border: 0;
+    margin-top: rem(28);
+  }
+
+  legend {
+    font-family: $primary-font;
+    font-weight: $font-weight-light;
+    font-size: $font-size-ms;
+    text-transform: uppercase;
+    margin-bottom: rem(12);
+
+    &::after {
+      content: "";
+      display: block;
+      border-bottom: 3px solid $brand-tertiary;
+      width: rem(40);
+      margin-top: rem(4);
+    }
+  }
+}

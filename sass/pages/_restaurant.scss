@@ -43,21 +43,6 @@
     }
   }
 
-  h2 {
-    font-weight: $font-weight-light;
-    font-size: $font-size-ms;
-    text-transform: uppercase;
-    margin-top: rem(40);
-
-    &::after {
-      content: "";
-      display: block;
-      border-bottom: 3px solid $brand-tertiary;
-      width: rem(40);
-      margin-top: rem(4);
-    }
-  }
-
   .buy {
     text-align: center;
     margin-top: rem(40);
