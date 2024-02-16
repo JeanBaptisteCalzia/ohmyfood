@@ -115,6 +115,10 @@
   animation: drop-in 1700ms ease-in-out 1800ms backwards;
 }
 
+.drop-in-10 {
+  animation: drop-in 1800ms ease-in-out 2000ms backwards;
+}
+
 @keyframes drop-in {
   from {
     opacity: 0;
