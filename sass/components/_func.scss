@@ -5,9 +5,13 @@
   position: relative;
   background-color: $color-light-gray;
   border-radius: rem(20);
-  padding: rem(24);
+  padding: rem(32) rem(24) rem(24) rem(24);
   margin-bottom: rem(24);
   margin-left: rem(12);
+
+  @include responsive(wide-screens) {
+    padding: rem(24);
+  }
 
   &:hover i {
     color: $brand-primary;
@@ -28,12 +32,26 @@
     margin-right: rem(24);
     margin-left: rem(12);
     display: inline-block;
+
+    @include responsive(medium-screens) {
+      margin-right: 0;
+      margin-left: 0;
+      margin-bottom: rem(12);
+      display: block;
+    }
+
+    @include responsive(wide-screens) {
+      margin-right: rem(24);
+      margin-left: rem(12);
+      margin-bottom: initial;
+      display: inline-block;
+    }
   }
 
   &__number {
     position: absolute;
-    left: rem(-12);
     top: calc(50% - 12px);
+    left: rem(-12);
     display: inline-block;
     font-weight: $font-weight-semibold;
     font-size: rem(14);
@@ -44,6 +62,16 @@
     color: $color-body;
     width: rem(24);
     height: rem(24);
+
+    @include responsive(medium-screens) {
+      top: rem(-12);
+      left: calc(50% - 12px);
+    }
+
+    @include responsive(wide-screens) {
+      top: calc(50% - 12px);
+      left: rem(-12);
+    }
   }
 
   &__title {
