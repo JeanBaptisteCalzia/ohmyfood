@@ -1,0 +1,38 @@
+// -----------------------------------------------------------------------------
+// This file contains Animations styles
+// -----------------------------------------------------------------------------
+.fill-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.fill-animation::after {
+  font-family: FontAwesome;
+  content: "\f004";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 0%;
+  overflow: hidden;
+  background: linear-gradient(175deg, #e370da, #a55cdc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 300ms ease-in-out;
+}
+
+button i:hover {
+  cursor: pointer;
+}
+
+button input:checked + .fill-animation::after {
+  font-family: FontAwesome;
+  content: "\f004";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  overflow: hidden;
+  background: linear-gradient(175deg, #e370da, #a55cdc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
