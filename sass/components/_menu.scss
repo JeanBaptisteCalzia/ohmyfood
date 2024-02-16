@@ -75,6 +75,7 @@
 
   input[type="checkbox"]:checked ~ .menu__icon {
     flex-basis: 10%;
+    min-width: rem(60);
     transform: translateX(0%);
   }
 }
