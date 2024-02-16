@@ -1,50 +1,50 @@
 // -----------------------------------------------------------------------------
 // This file contains Card styles
 // -----------------------------------------------------------------------------
-.loader {
-  position: absolute;
-  top: 50%;
-  right: calc(50% - 25px);
-  width: 50px;
-  height: 50px;
-  z-index: 100000;
-  border-radius: 50%;
-  background: radial-gradient(farthest-side, #9356dc 94%, #0000) top/8px 8px
-      no-repeat,
-    conic-gradient(#0000 30%, #9356dc);
-  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0);
-  animation: turn 1s linear;
-  animation-fill-mode: forwards; /* This declaration stops the animation from looping */
+.loader-container {
+  animation: 2s forwards change-bg-color linear;
 }
 
-.loader-container {
-  animation: change-bg-color 3s;
-  animation-fill-mode: forwards; /* This declaration stops the animation from looping */
-  position: absolute;
-  top: 50%;
-  right: 50%;
-  transform: translate(-50%, -50%);
+.loader {
+  border-radius: 50%;
+  animation: 2s forwards turn linear;
 }
 
 @keyframes change-bg-color {
   0% {
     background-color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     z-index: 100000;
   }
   100% {
-    background-color: transparent;
     display: none;
   }
 }
 
 @keyframes turn {
+  0% {
+    position: absolute;
+    top: 50%;
+    right: calc(50% - 25px);
+    width: 50px;
+    height: 50px;
+    z-index: 100000;
+    background: radial-gradient(farthest-side, #9356dc 94%, #0000) top/8px 8px
+        no-repeat,
+      conic-gradient(#0000 30%, #9356dc);
+    -webkit-mask: radial-gradient(
+      farthest-side,
+      #0000 calc(100% - 8px),
+      #000 0
+    );
+    transform: rotate(0deg);
+  }
   100% {
     transform: rotate(1turn);
-  }
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
+    display: none;
   }
 }
