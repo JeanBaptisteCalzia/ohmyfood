@@ -17,7 +17,7 @@ main {
 
       @include responsive(wide-screens) {
         // gap: rem(50) rem(100);
-        gap: clamp(rem(24), 4vw, rem(100));
+        gap: clamp(rem(24), 4vw, rem(50)) clamp(rem(24), 4vw, rem(100));
       }
 
       > article {
