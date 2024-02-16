@@ -23,6 +23,8 @@
   }
 
   h1 + button {
+    @include animation-heart;
+    position: relative;
     border: 0;
     width: rem(24);
     height: rem(24);
@@ -31,6 +33,7 @@
     margin: 0;
     float: right;
     margin-right: rem(24);
+    font-size: rem(24);
 
     @include responsive(medium-screens) {
       float: initial;
