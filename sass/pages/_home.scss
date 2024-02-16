@@ -8,6 +8,9 @@
     line-height: $line-height-global;
     font-size: $font-size-ms;
     padding: rem(16) rem(16);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 
   input::placeholder {
