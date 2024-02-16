@@ -17,11 +17,8 @@ header {
     margin: 0;
     padding: rem(16) rem(0);
 
-    a {
-      height: rem(32);
-      width: rem(32);
-      text-align: center;
-      line-height: rem(32);
+    .logo {
+      display: flex;
 
       .fa-solid {
         font-size: rem(24);
@@ -35,8 +32,21 @@ header {
   nav {
     justify-content: space-between;
 
-    img {
+    .logo {
       margin-right: calc(50% - 98px); /* 196px / 2 : Logo size*/
+    }
+
+    .back-to-home {
+      display: flex;
+      align-items: center;
+      height: rem(32);
+      width: rem(32);
+      text-align: center;
+      line-height: rem(32);
+
+      i {
+        font-size: rem(20);
+      }
     }
   }
 }
