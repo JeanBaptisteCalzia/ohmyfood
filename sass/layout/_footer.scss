@@ -16,15 +16,22 @@ footer {
     }
   }
 
-  img {
-    filter: invert(1);
-    margin-bottom: rem(16);
-    width: rem(120);
-
+  .logo {
+    display: flex;
+    align-items: center;
     @include responsive(wide-screens) {
       order: 2;
-      margin-left: rem(120);
-      margin-bottom: 0;
+    }
+
+    img {
+      filter: invert(1);
+      margin-bottom: rem(16);
+      width: rem(120);
+
+      @include responsive(wide-screens) {
+        margin-left: rem(120);
+        margin-bottom: 0;
+      }
     }
   }
 
