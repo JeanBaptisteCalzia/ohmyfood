@@ -48,7 +48,6 @@
     padding-right: rem(12);
     flex-basis: 11%;
     font-weight: $font-weight-bold;
-    transform: translateX(0%);
   }
 
   &__icon {
@@ -75,7 +74,6 @@
 
   input[type="checkbox"]:checked ~ .menu__price {
     flex-basis: rem(60);
-    padding-right: rem(12);
   }
 
   input[type="checkbox"]:checked ~ .menu__icon {
