@@ -82,45 +82,12 @@
     transform: translateX(0);
   }
 }
-
 .drop-in {
-  animation: drop-in 1s ease-in-out 200ms backwards;
-}
-
-.drop-in-2 {
-  animation: drop-in 1000ms ease-in-out 400ms backwards;
-}
-
-.drop-in-3 {
-  animation: drop-in 1100ms ease-in-out 600ms backwards;
-}
-
-.drop-in-4 {
-  animation: drop-in 1200ms ease-in-out 800ms backwards;
-}
-
-.drop-in-5 {
-  animation: drop-in 1300ms ease-in-out 1000ms backwards;
-}
-
-.drop-in-6 {
-  animation: drop-in 1400ms ease-in-out 1200ms backwards;
-}
-
-.drop-in-7 {
-  animation: drop-in 1500ms ease-in-out 1400ms backwards;
-}
-
-.drop-in-8 {
-  animation: drop-in 1600ms ease-in-out 1600ms backwards;
-}
-
-.drop-in-9 {
-  animation: drop-in 1700ms ease-in-out 1800ms backwards;
-}
-
-.drop-in-10 {
-  animation: drop-in 1800ms ease-in-out 2000ms backwards;
+  @for $i from 1 through 11 {
+    &-#{$i} {
+      animation: drop-in 600ms ease-in-out 200ms * $i backwards;
+    }
+  }
 }
 
 @keyframes drop-in {
