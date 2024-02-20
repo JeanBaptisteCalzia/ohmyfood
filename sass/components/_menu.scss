@@ -68,15 +68,18 @@
     }
   }
 
-  input[type="checkbox"]:checked ~ .menu__content {
+  input[type="checkbox"]:checked ~ .menu__content,
+  input[type="checkbox"]:hover ~ .menu__content {
     flex-basis: calc(100% - rem(60));
   }
 
-  input[type="checkbox"]:checked ~ .menu__price {
+  input[type="checkbox"]:checked ~ .menu__price,
+  input[type="checkbox"]:hover ~ .menu__price {
     flex-basis: rem(60);
   }
 
-  input[type="checkbox"]:checked ~ .menu__icon {
+  input[type="checkbox"]:checked ~ .menu__icon,
+  input[type="checkbox"]:hover ~ .menu__icon {
     flex-basis: rem(60);
     margin-left: 0;
     transform: translateX(0);
