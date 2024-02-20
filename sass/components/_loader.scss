@@ -2,49 +2,48 @@
 // This file contains Card styles
 // -----------------------------------------------------------------------------
 .loader-container {
-  animation: 2s forwards change-bg-color linear;
-}
-
-.loader {
-  border-radius: 50%;
-  animation: 2s forwards turn linear;
-}
-
-@keyframes change-bg-color {
-  0% {
-    background-color: white;
+  &::before {
+    content: "";
+    background-color: $color-body;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 100000;
+    z-index: 100;
+    animation: change-bg-color 2s both linear;
   }
-  100% {
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  right: calc(50% - 25px);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  z-index: 1000;
+  background: radial-gradient(farthest-side, #9356dc 94%, #0000) top/8px 8px
+      no-repeat,
+    conic-gradient(#0000 30%, #9356dc);
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0);
+  animation: turn 2s forwards linear;
+}
+
+@keyframes turn {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(1turn);
     display: none;
   }
 }
 
-@keyframes turn {
-  0% {
-    position: absolute;
-    top: 50%;
-    right: calc(50% - 25px);
-    width: 50px;
-    height: 50px;
-    z-index: 100000;
-    background: radial-gradient(farthest-side, #9356dc 94%, #0000) top/8px 8px
-        no-repeat,
-      conic-gradient(#0000 30%, #9356dc);
-    -webkit-mask: radial-gradient(
-      farthest-side,
-      #0000 calc(100% - 8px),
-      #000 0
-    );
-    transform: rotate(0deg);
+@keyframes change-bg-color {
+  from {
   }
-  100% {
-    transform: rotate(1turn);
+  to {
     display: none;
   }
 }
