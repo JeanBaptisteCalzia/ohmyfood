@@ -43,16 +43,20 @@
     }
   }
 
-  button {
+  label {
     position: absolute;
     right: rem(24);
-    bottom: rem(38);
+    bottom: rem(32);
     border: 0;
     width: rem(24);
     height: rem(24);
     background-color: $color-body;
     padding: 0;
     margin: 0;
+
+    &:hover {
+      cursor: pointer;
+    }
 
     input {
       display: none;
