@@ -10,8 +10,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 100;
-    animation: change-bg-color 2s both linear;
+    animation: display-none-transition 2s both linear;
   }
 }
 
@@ -22,7 +21,6 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  z-index: 1000;
   background: radial-gradient(farthest-side, #9356dc 94%, #0000) top/8px 8px
       no-repeat,
     conic-gradient(#0000 30%, #9356dc);
@@ -33,17 +31,19 @@
 @keyframes turn {
   from {
     transform: rotate(0deg);
+    z-index: 10000;
   }
   to {
     transform: rotate(1turn);
-    display: none;
+    z-index: -1;
   }
 }
 
-@keyframes change-bg-color {
+@keyframes display-none-transition {
   from {
+    z-index: 1000;
   }
   to {
-    display: none;
+    z-index: -1;
   }
 }
