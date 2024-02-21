@@ -31,11 +31,13 @@
     float: right;
     margin-right: rem(24);
     font-size: rem(24);
+    bottom: rem(4);
 
     @include responsive(medium-screens) {
       float: initial;
       margin-left: rem(24);
       margin-right: 0;
+      bottom: 0;
     }
 
     &:hover {
