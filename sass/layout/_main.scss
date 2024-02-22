@@ -9,6 +9,8 @@ main {
     > div {
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
+
       @include responsive(medium-screens) {
         flex-direction: row;
         flex-wrap: wrap;
